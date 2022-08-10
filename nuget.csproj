@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>VRising.Unhollowed.Client</PackageId>
+
+    <Authors>deca</Authors>
+    <Company>V Rising Mods</Company>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<UnhollowedDllPath>L:\SteamLibrary\steamapps\common\VRising\BepInEx\unhollowed</UnhollowedDllPath>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <UnhollowedDlls Include="$(UnhollowedDllPath)\*.dll" />
+  </ItemGroup>
+
+  <Target Name="Copy Client Unhollowed Dlls" AfterTargets="AfterBuild">
+    <Copy SourceFiles="@(UnhollowedDlls)" DestinationFolder="$(OutDir)/dist" />
+  </Target>
+
+</Project>
