@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>VRising.Unhollowed.Client</PackageId>
-
     <Authors>deca</Authors>
     <Company>V Rising Mods</Company>
   </PropertyGroup>

@@ -3,15 +3,17 @@
   <metadata>
     <id>VRising.Unhollowed.Client</id>
     <title>VRising.Unhollowed.Client</title>
-    <version>0.5.0</version>
+    <version>0.6.2</version>
     <authors>deca</authors>
-    <owners>deca</owners>
+    <owners>deca, vrisingmods.com</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>V Rising Unhollowed Client Dlls</description>
-    <tags>Totaly worthless</tags>
+    <icon>images\icon.jpg</icon>
+    <tags>VRising</tags>
     <repository type="git" url="https://github.com/decaprime/vrising-nuget.git" />
   </metadata>
   <files>
-    <file src="bin\Debug\net6.0\dist\*.*" target="lib\net6.0" />
+    <file src="bin\Debug\netstandard2.1\dist\*.*" target="lib\netstandard2.1" />
+    <file src="icon.jpg" target="images\" />
   </files>
 </package>
